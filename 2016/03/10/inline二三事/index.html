@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Essay | Timereader&#39;blog</title>
+  <title>inline二三事 | Timereader&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Essay">
-<meta property="og:url" content="http://yoursite.com/Essay/index.html">
+  <meta name="description" content="设计动机内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。
+没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="inline二三事">
+<meta property="og:url" content="http://yoursite.com/2016/03/10/inline二三事/index.html">
 <meta property="og:site_name" content="Timereader'blog">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-03-10T01:35:30.000Z">
+<meta property="og:description" content="设计动机内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。
+没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。">
+<meta property="og:updated_time" content="2016-03-10T07:58:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Essay">
-<meta name="twitter:description">
+<meta name="twitter:title" content="inline二三事">
+<meta name="twitter:description" content="设计动机内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。
+没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。">
   
   
     <link rel="icon" href="/favicon.png">
@@ -113,7 +116,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/基础/" style="font-size: 10px;">基础</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -185,11 +188,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-inline二三事" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/Essay/index.html" class="article-date">
-  	<time datetime="2016-03-10T01:35:30.000Z" itemprop="datePublished">2016-03-10</time>
+      <a href="/2016/03/10/inline二三事/" class="article-date">
+  	<time datetime="2016-03-10T07:43:47.000Z" itemprop="datePublished">2016-03-10</time>
 </a>
     </div>
   
@@ -202,7 +205,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Essay
+      inline二三事
     </h1>
   
 
@@ -210,7 +213,15 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li></ul>
+	</div>
+
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/C/">C++</a>
+	</div>
+
 
         <div class="clearfix"></div>
       </div>
@@ -218,13 +229,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="设计动机"><a href="#设计动机" class="headerlink" title="设计动机"></a>设计动机</h2><p>内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。</p>
+<p>没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。</p>
+<p>此外，在一些语言中，内联函数与编译模型联系紧密：如在C++中，有必要在每个使用它的模块中定义一个内联函数；与之相对应的，普通函数必须定义在单个模块中。这使得模块编译独立于其他的模块。</p>
+<h2 id="与普通函数比较"><a href="#与普通函数比较" class="headerlink" title="与普通函数比较"></a>与普通函数比较</h2><p>inline函数在调用的时候只做文本替换，从而没有了函数压栈和出栈的的开销，是一种更为快捷的调用方式，<br>一般编译器是对内联有显示要求的，而一个函数能否成为内联还与他的复杂程度相关。</p>
+<h2 id="与宏比较"><a href="#与宏比较" class="headerlink" title="与宏比较"></a>与宏比较</h2><ol>
+<li>类型检查和参数检查，宏是不会进行类型检查和参数检查的，而函数是必须的。</li>
+<li>宏进行文本替换后需要重现计算参数了操作顺序，而他的后果是无法预料的。</li>
+<li>宏中的错误比较难发现，他真正引入的扩展后的代码，而不是可见的代码内容。</li>
+<li>宏相对而言比较难以理解，可读性差。</li>
+<li>内联函数在调试的时候会更好。  </li>
+</ol>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ol>
+<li>代码膨胀</li>
+<li>决定一个函数是否内联不是编码者来决定的。</li>
+<li>函数可能在修改的过程中发生内联和非内联的转换，从而是需要一定维护的代价的。这里是跟宏作笔记。</li>
+<li>内联函数会增加编译时间。</li>
+</ol>
+
       
     </div>
     
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2016/03/10/My-Gallery/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          My Gallery
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/10/金山这几年/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">金山这几年</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -254,7 +301,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="Essay" data-url="http://yoursite.com/Essay/index.html"></div>
+	<div class="ds-thread" data-thread-key="inline二三事" data-title="inline二三事" data-url="http://yoursite.com/2016/03/10/inline二三事/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -298,7 +345,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

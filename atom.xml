@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-10T01:54:04.000Z</updated>
+  <updated>2016-03-10T09:12:50.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,19 +16,88 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>金山这几年</title>
-    <link href="http://yoursite.com/2016/03/10/%E9%87%91%E5%B1%B1%E8%BF%99%E5%87%A0%E5%B9%B4/"/>
-    <id>http://yoursite.com/2016/03/10/金山这几年/</id>
-    <published>2016-03-10T01:49:56.000Z</published>
-    <updated>2016-03-10T01:54:04.000Z</updated>
+    <title>My Gallery</title>
+    <link href="http://yoursite.com/2016/03/10/My-Gallery/"/>
+    <id>http://yoursite.com/2016/03/10/My-Gallery/</id>
+    <published>2016-03-10T09:12:50.000Z</published>
+    <updated>2016-03-10T09:12:50.000Z</updated>
     
-    <content type="html">&lt;p&gt;时间是把猪饲料。&lt;/p&gt;
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>inline二三事</title>
+    <link href="http://yoursite.com/2016/03/10/inline%E4%BA%8C%E4%B8%89%E4%BA%8B/"/>
+    <id>http://yoursite.com/2016/03/10/inline二三事/</id>
+    <published>2016-03-10T07:43:47.000Z</published>
+    <updated>2016-03-10T07:58:03.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;设计动机&quot;&gt;&lt;a href=&quot;#设计动机&quot; class=&quot;headerlink&quot; title=&quot;设计动机&quot;&gt;&lt;/a&gt;设计动机&lt;/h2&gt;&lt;p&gt;内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。&lt;/p&gt;
+&lt;p&gt;没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。&lt;/p&gt;
+&lt;p&gt;此外，在一些语言中，内联函数与编译模型联系紧密：如在C++中，有必要在每个使用它的模块中定义一个内联函数；与之相对应的，普通函数必须定义在单个模块中。这使得模块编译独立于其他的模块。&lt;/p&gt;
+&lt;h2 id=&quot;与普通函数比较&quot;&gt;&lt;a href=&quot;#与普通函数比较&quot; class=&quot;headerlink&quot; title=&quot;与普通函数比较&quot;&gt;&lt;/a&gt;与普通函数比较&lt;/h2&gt;&lt;p&gt;inline函数在调用的时候只做文本替换，从而没有了函数压栈和出栈的的开销，是一种更为快捷的调用方式，&lt;br&gt;一般编译器是对内联有显示要求的，而一个函数能否成为内联还与他的复杂程度相关。&lt;/p&gt;
+&lt;h2 id=&quot;与宏比较&quot;&gt;&lt;a href=&quot;#与宏比较&quot; class=&quot;headerlink&quot; title=&quot;与宏比较&quot;&gt;&lt;/a&gt;与宏比较&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;类型检查和参数检查，宏是不会进行类型检查和参数检查的，而函数是必须的。&lt;/li&gt;
+&lt;li&gt;宏进行文本替换后需要重现计算参数了操作顺序，而他的后果是无法预料的。&lt;/li&gt;
+&lt;li&gt;宏中的错误比较难发现，他真正引入的扩展后的代码，而不是可见的代码内容。&lt;/li&gt;
+&lt;li&gt;宏相对而言比较难以理解，可读性差。&lt;/li&gt;
+&lt;li&gt;内联函数在调试的时候会更好。  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;不足&quot;&gt;&lt;a href=&quot;#不足&quot; class=&quot;headerlink&quot; title=&quot;不足&quot;&gt;&lt;/a&gt;不足&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;代码膨胀&lt;/li&gt;
+&lt;li&gt;决定一个函数是否内联不是编码者来决定的。&lt;/li&gt;
+&lt;li&gt;函数可能在修改的过程中发生内联和非内联的转换，从而是需要一定维护的代价的。这里是跟宏作笔记。&lt;/li&gt;
+&lt;li&gt;内联函数会增加编译时间。&lt;/li&gt;
+&lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;时间是把猪饲料。&lt;/p&gt;
+      &lt;h2 id=&quot;设计动机&quot;&gt;&lt;a href=&quot;#设计动机&quot; class=&quot;headerlink&quot; title=&quot;设计动机&quot;&gt;&lt;/a&gt;设计动机&lt;/h2&gt;&lt;p&gt;内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间
+    
+    </summary>
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="基础" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>金山这几年</title>
+    <link href="http://yoursite.com/2016/03/10/%E9%87%91%E5%B1%B1%E8%BF%99%E5%87%A0%E5%B9%B4/"/>
+    <id>http://yoursite.com/2016/03/10/金山这几年/</id>
+    <published>2016-03-10T01:49:56.000Z</published>
+    <updated>2016-03-10T09:41:45.000Z</updated>
+    
+    <content type="html">&lt;p&gt;时间是把猪饲料。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
 
+int main()
+{
+    printf(&amp;quot;Good Bye Kingsoft&amp;quot;);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;时间是把猪饲料。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+
+int main()
+{
+    printf(&amp;quot;Good Bye Kingsoft&amp;quot;);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     

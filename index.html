@@ -112,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/基础/" style="font-size: 10px;">基础</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -186,6 +186,135 @@
 
       <div class="body-wrap">
   
+    <article id="photo-My-Gallery" class="article article-type-photo" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/10/My-Gallery/" class="article-date">
+  	<time datetime="2016-03-10T09:12:50.000Z" itemprop="datePublished">2016-03-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/10/My-Gallery/">My Gallery</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-inline二三事" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/10/inline二三事/" class="article-date">
+  	<time datetime="2016-03-10T07:43:47.000Z" itemprop="datePublished">2016-03-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/10/inline二三事/">inline二三事</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="设计动机"><a href="#设计动机" class="headerlink" title="设计动机"></a>设计动机</h2><p>内联扩展是一种特别的用于消除调用函数时所造成的固有的时间消耗方法。一般用于能够快速执行的函数，因为在这种情况下函数调用的时间消耗显得更为突出。这种方法对于很小的函数也有空间上的益处，并且它也使得一些其他的优化成为可能。</p>
+<p>没有了内联函式，程式员难以控制哪些函数内联哪些不内联；由编译器自行决定是否内联。加上这种控制维度准许特定于应用的知识，诸如执行函式的频繁程度，被利用于选择哪些函数要内联。</p>
+<p>此外，在一些语言中，内联函数与编译模型联系紧密：如在C++中，有必要在每个使用它的模块中定义一个内联函数；与之相对应的，普通函数必须定义在单个模块中。这使得模块编译独立于其他的模块。</p>
+<h2 id="与普通函数比较"><a href="#与普通函数比较" class="headerlink" title="与普通函数比较"></a>与普通函数比较</h2><p>inline函数在调用的时候只做文本替换，从而没有了函数压栈和出栈的的开销，是一种更为快捷的调用方式，<br>一般编译器是对内联有显示要求的，而一个函数能否成为内联还与他的复杂程度相关。</p>
+<h2 id="与宏比较"><a href="#与宏比较" class="headerlink" title="与宏比较"></a>与宏比较</h2><ol>
+<li>类型检查和参数检查，宏是不会进行类型检查和参数检查的，而函数是必须的。</li>
+<li>宏进行文本替换后需要重现计算参数了操作顺序，而他的后果是无法预料的。</li>
+<li>宏中的错误比较难发现，他真正引入的扩展后的代码，而不是可见的代码内容。</li>
+<li>宏相对而言比较难以理解，可读性差。</li>
+<li>内联函数在调试的时候会更好。  </li>
+</ol>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ol>
+<li>代码膨胀</li>
+<li>决定一个函数是否内联不是编码者来决定的。</li>
+<li>函数可能在修改的过程中发生内联和非内联的转换，从而是需要一定维护的代价的。这里是跟宏作笔记。</li>
+<li>内联函数会增加编译时间。</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/C/">C++</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="eassy-金山这几年" class="article article-type-eassy" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -213,7 +342,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>时间是把猪饲料。</p>
+<pre><code>#include &lt;stdio.h&gt;
 
+int main()
+{
+    printf(&quot;Good Bye Kingsoft&quot;);
+    return 0;
+}
+</code></pre>
       
     </div>
     
